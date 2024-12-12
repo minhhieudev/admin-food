@@ -1,0 +1,40 @@
+.icon-inbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--Primary-400, #ffaa47);
+}
+.icon-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--Primary-400, #00b2ff);
+}
+.icon-money-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--Primary-400, #23c16b);
+}
+.icon-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--Primary-400, #40a511);
+}
+.icon-setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--Primary-400, #AE6565);
+}

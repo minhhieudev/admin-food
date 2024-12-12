@@ -1,0 +1,31 @@
+.service-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+.service-search-btn {
+  background-color: #ff8900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 48px;
+  border-width: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.search-service-container {
+  padding-block: 16px;
+}
+.service-pagination {
+  padding-top: 16px;
+}
+.service-icon-create {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.service-list-icon {
+  width: 32px;
+  height: 32px;
+}

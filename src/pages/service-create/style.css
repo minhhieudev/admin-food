@@ -1,0 +1,72 @@
+.service-create-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.service-create-title {
+  color: var(--Dark-600, #090a0a);
+
+  /* Large/Normal/Bold */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.service-create-one-field {
+  margin-top: 20px;
+}
+.service-create-one-field-name {
+  margin-bottom: 8px;
+}
+
+.service-create-content-container {
+  display: flex;
+}
+.service-create-content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.service-create-content-right {
+  margin-left: 16px;
+  flex: 2;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.list-image{
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+.mt-3{
+  margin-top: 8px;
+}
+.list-ingredient {
+  display: grid;
+  gap: 16px;
+}
+.list-ingredient {
+  display: grid;
+  grid-gap: 16px; /* Khoảng cách giữa các item trong grid */
+}
+.image-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .list-ingredient {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 767px) {
+  .list-ingredient {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}

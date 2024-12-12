@@ -1,0 +1,55 @@
+.tcs-table-container {
+  border-spacing: 0px;
+  width: 100%;
+}
+.tcs-td-base {
+  border: 1px solid #f7f9fa;
+  padding: 8px 12px 8px 12px;
+}
+
+.tcs-td-head {
+  color: var(--Dark-100, #72777a);
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.tcs-table-no-data {
+  color: #72777a;
+  padding: 20px;
+  text-align: center;
+}
+.tcs-td-border {
+  border: 1px solid #f7f9fa;
+}
+.tcs-delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tcs-cog-btn {
+  border-width: 0px;
+  border-radius: 50px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.tcs-tr {
+  transition-duration: 0.5s;
+}
+.tcs-tr:hover {
+  background-color: #cccccc10;
+}
+
+.btn-description {
+  border: 0px;
+  color: #ff8900;
+  background-color: white;
+}

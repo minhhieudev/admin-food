@@ -1,0 +1,37 @@
+.customer-detail-info-container {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+.customer-detail-label {
+  color: var(--Dark-100, #72777a);
+  line-height: 20px; /* 125% */
+  margin-inline: 8px;
+}
+.customer-detail-block {
+  color: var(--Dark-100, #ff5247);
+  line-height: 20px; /* 125% */
+  margin-inline: 8px;
+}
+.customer-detail-balance {
+  color: var(--Primary-500, #ff8900);
+
+  line-height: 24px; /* 150% */
+}
+.customer-detail-btn-container {
+  position: relative;
+}
+.customer-detail-btn-area {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+}
+.customer-detail-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.customer-detail-modal-one-field {
+  margin-top: 20px;
+}

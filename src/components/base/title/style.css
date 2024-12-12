@@ -1,0 +1,11 @@
+.title-container {
+}
+.title-content {
+  color: var(--Dark-600, #090a0a);
+  text-align: center;
+
+  /* Title 3 */
+  font-size: 24px;
+  font-style: normal;
+  line-height: 32px; /* 133.333% */
+}

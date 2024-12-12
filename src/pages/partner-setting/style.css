@@ -1,0 +1,77 @@
+.partner-setting-general-container {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.partner-setting-paypal-title {
+  color: var(--Dark-600, #090a0a);
+
+  /* Large/Normal/Bold */
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+
+.partner-setting-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.partner-setting-title {
+  color: var(--Dark-600, #090a0a);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  font-weight: 500;
+}
+.partner-setting-input-small-description {
+  color: var(--Dark-100, #72777a);
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+}
+.partner-setting-required {
+  color: red;
+}
+.partner-setting-field-name {
+  color: var(--Dark-600, #090a0a);
+
+  /* Regular/Normal/Regular */
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 4px;
+}
+.partner-setting-vnd {
+  color: var(--Gray-500, #979c9e);
+  text-align: center;
+  padding-right: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.pa-modal-title {
+  color: var(--Primary-500, #ff8900);
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.pa-modal-search-container {
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}

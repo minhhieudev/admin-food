@@ -1,0 +1,26 @@
+.order-detail-general {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.order-detail-content {
+  display: flex;
+}
+.order-detail-detail {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.order-detail-one-general {
+  flex: 1;
+}
+.order-detail-one-general-label {
+  color: var(--Dark-600, #090a0a);
+  line-height: 24px; /* 150% */
+}
+.order-detail-one-general-value {
+  color: var(--Primary-500, #ff8900);
+  line-height: 24px; /* 133.333% */
+}

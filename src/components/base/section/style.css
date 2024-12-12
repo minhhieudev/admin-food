@@ -1,0 +1,12 @@
+.section-container {
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.section-content {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 20px;
+}

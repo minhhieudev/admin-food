@@ -1,0 +1,28 @@
+@keyframes home-an-container {
+  from {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.cn-container {
+  background-color: #F2F4F5;
+  padding: 24px;
+  margin: 0px 12px 12px 12px;
+  border-radius: 20px;
+  animation: home-an-container 0.5s ease-in-out;
+}
+
+.cn-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cn-content {
+  margin-top: 24px;
+}

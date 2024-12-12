@@ -1,0 +1,57 @@
+.input-container {
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  overflow: hidden;
+}
+.input-container-no-error {
+  border: 1px solid #e3e5e5;
+  transition-duration: 0.5s;
+}
+.input-container-has-error {
+  border: 1px solid #ff0000;
+  transition-duration: 0.5s;
+}
+
+.input-content {
+  border: 0px solid #e3e5e5;
+  width: 100%;
+  padding-inline: 12px;
+  padding-block: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  height: 50px;
+  outline: none;
+}
+
+.input-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: white;
+}
+
+.input-left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: white;
+}
+
+.input-error-message {
+  color: red;
+  font-size: 12px;
+}

@@ -1,0 +1,42 @@
+@keyframes table-tr-an {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.table-container {
+  border-spacing: 0px;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+.table-td-base {
+  border: 1px solid #f7f9fa;
+  padding: 8px 12px 8px 12px;
+  text-align: center;
+  animation: table-tr-an 0.5s ease-in-out;
+  transition-duration: 0.5s;
+}
+.table-tr {
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.table-tr:hover {
+  background-color: #cccccc30;
+}
+
+.table-td-head {
+  color: var(--Dark-100, #72777a);
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.table-no-data {
+  color: #72777a;
+  padding: 20px;
+  text-align: center;
+}

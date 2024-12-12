@@ -1,0 +1,57 @@
+.ingredient-create-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.ingredient-create-title {
+  font-size: 18px;
+}
+
+.ingredient-create-one-field {
+  margin-top: 20px;
+}
+
+.ingredient-create-one-field-name {
+  margin-bottom: 8px;
+}
+
+.buttonUpload {
+  margin-top: 8px;
+  width: 20%;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  color: red;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+.listTag {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 150px; /* Chiều cao tối đa của danh sách */
+  overflow-y: auto; /* Hiển thị thanh cuộn theo chiều dọc khi danh sách vượt quá chiều cao */
+  gap: 10px; /* Khoảng cách giữa các tag */
+}
+
+.selectTag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  min-width: 100px;
+}

@@ -1,0 +1,19 @@
+.meal-create-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.meal-create-title {
+  font-size: 18px;
+}
+.meal-create-one-field {
+  margin-top: 20px;
+}
+.meal-create-one-field-name {
+  margin-bottom: 8px;
+}
+.custom{
+  display: flex;
+  justify-content: space-between;
+}

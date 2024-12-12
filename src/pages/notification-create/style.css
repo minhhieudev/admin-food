@@ -1,0 +1,15 @@
+.notification-create-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.notification-create-title {
+  font-size: 18px;
+}
+.notification-create-one-field {
+  margin-top: 20px;
+}
+.notification-create-one-field-name {
+  margin-bottom: 8px;
+}

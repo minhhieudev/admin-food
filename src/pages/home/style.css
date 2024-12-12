@@ -1,0 +1,24 @@
+@keyframes home-an-container {
+  from {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.home-container {
+  display: flex;
+  background-color: white;
+}
+
+.home-left-container {
+  position: relative;
+}
+.home-right-container {
+  animation: home-an-container 0.4s ease-in-out;
+  padding-left: 348px;
+  width: 100%;
+}

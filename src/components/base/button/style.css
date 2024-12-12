@@ -1,0 +1,122 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #ffbd70;
+  border-bottom: 2px solid #ffbd70;
+  width: 14px;
+  height: 14px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader2 {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #ffbd70;
+  border-bottom: 2px solid #ffbd70;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loaderSmall {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #ffbd70;
+  border-bottom: 2px solid #ffbd70;
+  width: 114px;
+  height: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.btn {
+  border-radius: 8px;
+  border-width: 0px;
+  padding: 12px 24px 12px 24px;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-contained {
+  background-color: #ff8900;
+  color: #fff;
+  border: 1px solid #ff8900;
+}
+
+.btn-outlined {
+  background-color: white;
+  color: #72777a;
+  border: 1px solid #e3e5e5;
+}
+
+.btn-text {
+  background-color: white;
+  color: #72777a;
+  border: 1px solid white;
+}
+.btn-active:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-disable {
+  background-color: #ccc;
+  cursor: none;
+}
+
+.btn-edit {
+  border: 1px solid #f7f9fa;
+  background-color: #f7f9fa;
+  border-radius: 50px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.btn-delete {
+  border: 1px solid #f7f9fa;
+  background-color: #f7f9fa;
+  border-radius: 50px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.btn-edit:hover {
+  border: 1px solid #00800050;
+  background-color: #00800030;
+}
+.btn-delete:hover {
+  border: 1px solid #ff000050;
+  background-color: #ff000030;
+}

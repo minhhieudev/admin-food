@@ -1,0 +1,294 @@
+.tcs-table-container {
+  border-spacing: 0px;
+  width: 100%;
+}
+
+.tcs-td-base {
+  border: 1px solid #f7f9fa;
+  padding: 8px 12px 8px 12px;
+}
+
+.tcs-td-head {
+  color: var(--Dark-100, #72777a);
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.tcs-table-no-data {
+  color: #72777a;
+  padding: 20px;
+  text-align: center;
+}
+
+.tcs-td-border {
+  border: 1px solid #f7f9fa;
+}
+
+.tcs-delete-btn {
+  border-width: 0px;
+  border-radius: 50px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.tcs-cog-btn {
+  border-width: 0px;
+  border-radius: 50px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.tcs-tr {
+  transition-duration: 0.5s;
+}
+
+.tcs-tr:hover {
+  background-color: #cccccc10;
+}
+
+.btn-description {
+  border: 0px;
+  color: #ff8900;
+  background-color: white;
+}
+
+.dropdown-icon-edit {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+}
+
+.AttributeDropdownModal_container {
+  padding: 4px;
+}
+
+.AttributeDropdownModal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.AttributeDropdownModal_title {
+  color: var(--Dark-600, #090A0A);
+
+  /* Large/Normal/Bold */
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.AttributeDropdownModal_fields {
+  display: flex;
+}
+
+.AttributeDropdownModal_fields_left {
+  flex: 1;
+}
+
+.AttributeDropdownModal_fields_item_field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.AttributeDropdownModal_fields_left_field_title {
+  color: var(--Dark-600, #090A0A);
+  text-align: center;
+
+  /* Small/Tight/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 114.286% */
+  margin-bottom: 4px;
+}
+
+.AttributeDropdownModal_fields_left_price_input_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.AttributeDropdownModal_fields_left_price_input_customType {
+  margin-left: 12px;
+}
+
+.AttributeDropdownModal_fields_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 20px;
+  justify-content: start;
+}
+
+.AttributeDropdownModal_input_container {
+  width: 100%;
+}
+
+.AttributeDropdownModal_input_error {
+  text-align: left;
+}
+
+.AttributeDropdownModal_fields_right_desc {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+}
+
+.AttributeDropdownModal_fields_right_button_add {
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 0.6px solid var(--Primary-500, #FF8900);
+  background: var(--White, #FFF);
+  cursor: pointer;
+  height: 50px;
+}
+
+.AttributeDropdownModal_fields_right_button_container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.AttributeDropdownModal_fields_right_add_text {
+  color: var(--Primary-500, var(--Primary-500, #FF8900));
+
+  /* Small/Tight/Bold */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  /* 114.286% */
+}
+
+.AttributeDropdownModal_list {
+}
+
+.AttributeDropdownModal_list_item_container {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+
+  border-radius: 4px;
+  border: 1px solid var(--Gray-300, #E3E5E5);
+  background: var(--White, #FFF);
+  margin-bottom: 20px;
+}
+
+.AttributeDropdownModal_list_item_container_left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.AttributeDropdownModal_list_item_container_right {
+  display: flex;
+}
+
+.action_button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-inline: 8px;
+}
+
+.AttributeDropdownModal_list_item_top {
+  display: flex;
+  align-items: center;
+}
+
+.AttributeDropdownModal_list_item_tile {
+  color: var(--Primary-500, var(--Primary-500, #FF8900));
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  /* 100% */
+}
+
+.AttributeDropdownModal_list_item_value {
+  color: var(--Dark-600, #090A0A);
+  font-family: Cabin;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  margin-left: 8px;
+  /* 100% */
+}
+
+.AttributeDropdownModal_list_item_desc {
+  color: var(--Dark-100, #72777A);
+  font-family: Cabin;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  /* 120% */
+}
+
+.AttributeDropdownModal_list_item_bottom {
+  display: flex;
+}
+
+.AttributeDropdownModal_list_item_price {
+  color: var(--Dark-600, #090A0A);
+  font-family: Cabin;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  /* 100% */
+}
+
+.AttributeDropdownModal_list_item_price_value {
+  color: var(--Primary-500, var(--Primary-500, #FF8900));
+  font-family: Cabin;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  /* 100% */
+  margin-left: 8px;
+
+}
+
+.separate {
+  width: 100%;
+  height: 1px;
+  background: #F2F4F5;
+  margin: 20px 0px;
+}
+
+.AttributeDropdownModal_action_buttons {
+  display: flex;
+  justify-content: end;
+}

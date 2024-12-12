@@ -1,0 +1,62 @@
+@keyframes sw-enable {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes sw-unenable {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.switch-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.switch-content-enable {
+  background-color: #ff8900;
+  height: 24px;
+  width: 43px;
+  border-radius: 50px;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.switch-content-unenable {
+  background-color: #cccccc80;
+  height: 24px;
+  width: 43px;
+  border-radius: 50px;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.switch-point-enable {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  transition-duration: 0.3s;
+  animation: sw-enable 0.3s ease-in-out;
+}
+
+.switch-point-unenable {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition-duration: 0.3s;
+  animation: sw-unenable 0.3s ease-in-out;
+}

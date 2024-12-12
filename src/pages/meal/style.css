@@ -1,0 +1,65 @@
+.service-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+.service-search-btn {
+  background-color: #ff8900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 48px;
+  border-width: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.search-service-container {
+  padding-block: 16px;
+}
+.service-pagination {
+  padding-top: 16px;
+}
+.service-icon-create {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.service-list-icon {
+  width: 32px;
+  height: 32px;
+}
+.meal-detail-section {
+  margin-bottom: 20px;
+}
+.meal-detail-info {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+.meal-ingredients-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+.ingredient-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+.ingredient-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.ingredient-info {
+  flex: 1;
+}
+.ingredient-info h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+}

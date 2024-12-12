@@ -1,0 +1,348 @@
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+}
+.dashboard-left-total-left {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dashboard-left-content {
+  display: flex;
+  gap: 24px;
+}
+.dashboard-left-total-right {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.total-right-top {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+.dashboard-left-inner {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dashboard-left-pie-content {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--White, #fff);
+  height: 100%;
+}
+.title-pie {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.dashboard-left-balance {
+  display: flex;
+  padding: 16px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--White, #fff);
+  height: 100%;
+}
+.title-balance {
+  display: flex;
+  align-items: start;
+  color: var(--Dark-600, #090a0a);
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.left-total-service {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  justify-content: space-between;
+}
+.dashboard-left-pie-content {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--White, #fff);
+}
+.chart-content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.chart {
+  position: absolute;
+  top: -90px;
+}
+.note {
+  position: absolute;
+  height: 100%;
+  top: 250px;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.btn-default {
+  outline: none;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  height: 32px;
+  cursor: pointer;
+}
+.btn-time {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.btn-time-detail {
+  display: flex;
+  gap: 8px;
+}
+/*================= CSS DASHBOARD RIGHT =======================*/
+
+.dashboard-right {
+  flex: 2;
+  padding: 24px;
+  gap: 24px;
+  opacity: 0px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.dashboard-right-search {
+  display: flex;
+  width: "100%";
+  justify-content: space-between;
+  padding-top: 24px;
+  gap: 12px;
+}
+
+.search-dashboard-container {
+  flex: 1;
+  height: 40px;
+}
+
+.dashboard-right-select {
+  width: 207px;
+  height: 40px;
+}
+
+.dashboard-right-select-none-search {
+  flex: 1;
+  height: 40px;
+}
+
+.dashboard-right-list-dad {
+  padding-right: 12px;
+  overflow: auto;
+}
+
+.dashboard-right-list {
+  display: flex;
+  height: 90px;
+  border: 1px solid #e3e5e5;
+  border-radius: 4px;
+  padding: 12px;
+  gap: 12px;
+  /* width: 100%; */
+}
+
+.dashboard-right-list-left {
+  width: 66px;
+  height: 66px;
+  border-radius: 4px;
+  border: 1px solid #f7f9fa;
+  padding: 12px;
+  align-items: center;
+  color: #ff8900;
+  background-color: #f7f9fa;
+}
+
+.dashboard-right-list-right-title {
+  font-family: "Cabin";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 14px;
+  color: #090a0a;
+  text-transform: uppercase;
+}
+
+.dashboard-right-list-right-under {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.dashboard-right-list-right-under div:nth-child(1) p:nth-child(1) {
+  font-family: "Cabin";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #72777a;
+  text-transform: uppercase;
+}
+
+.dashboard-right-list-right-under div:nth-child(1) p:nth-child(2) {
+  font-family: "Cabin";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ff8900;
+}
+
+.dashboard-right-list-right-under div:nth-child(2) p:nth-child(1) {
+  font-family: "Cabin";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #72777a;
+  text-transform: uppercase;
+}
+
+.dashboard-right-list-right-under div:nth-child(2) p:nth-child(2) {
+  font-family: "Cabin";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #090a0a;
+}
+
+.dashboard-right-list-right-under div:nth-child(3) p:nth-child(1) {
+  font-family: "Cabin";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #72777a;
+  text-transform: uppercase;
+}
+
+.dashboard-right-list-right-under div:nth-child(3) p:nth-child(2) {
+  font-family: "Cabin";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #090a0a;
+}
+.dashboard-right-pagination {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+.dashboard-right-list-left-icon {
+  width: 60px;
+  height: 60px;
+}
+.dash-board-left-modal {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 16px;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #f7f9fa;
+  background-color: #f7f9fa;
+}
+.dash-board-left-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dash-board-left-modal-title div:nth-child(2) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #72777a;
+}
+.dash-board-left-modal-icon {
+  width: 16px;
+  height: 16px;
+  padding: -4px 4px;
+  cursor: pointer;
+}
+.dash-board-left-modal-popup {
+  display: flex;
+  gap: 20px;
+}
+.dash-board-left-modal-popup-childe {
+  display: flex;
+  padding: 16px 24px 16px 24px;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 12px;
+  width: 285px;
+  gap: 12px;
+  height: 75px;
+  border: 1px solid #f2f4f5;
+  margin-top: 20px;
+}
+.dash-board-left-modal-popup-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #090a0a;
+}
+.container-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
+.loader-dashboard {
+  border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #ffbd70;
+    border-bottom: 2px solid #ffbd70;
+    width: 14px;
+    height: 14px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================== END =======================  */

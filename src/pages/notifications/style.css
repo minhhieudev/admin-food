@@ -1,0 +1,31 @@
+.notification-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+.notification-search-btn {
+  background-color: #ff8900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 48px;
+  border-width: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.search-notification-container {
+  padding-block: 16px;
+}
+.notification-pagination {
+  padding-top: 16px;
+}
+.notification-icon-create {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.notification-list-icon {
+  width: 32px;
+  height: 32px;
+}

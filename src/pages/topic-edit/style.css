@@ -1,0 +1,15 @@
+.topic-create-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.topic-create-title {
+  font-size: 18px;
+}
+.topic-create-one-field {
+  margin-top: 20px;
+}
+.topic-create-one-field-name {
+  margin-bottom: 8px;
+}

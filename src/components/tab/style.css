@@ -1,0 +1,43 @@
+@keyframes tab-one-item-line-active-an {
+  from {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.tab-container {
+  width: 100%;
+  display: flex;
+}
+
+.tab-one-item {
+  margin-right: 24px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.tab-one-item-line-active {
+  transition-duration: 0.3s;
+  animation: tab-one-item-line-active-an 0.5s ease-in-out;
+  background-color: #ff8900;
+  height: 2px;
+  border-radius: 20px;
+}
+
+.tab-one-item-line-unactive {
+  background-color: white;
+  height: 2px;
+  border-radius: 20px;
+}
+
+.tab-one-item-label-unactive {
+  color: #72777a;
+  padding-block: 8px;
+}
+.tab-one-item-label-active {
+  color: #ff8900;
+  padding-block: 8px;
+}
