@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from "../base/modal/Modal";
 import moment from "moment";
 import MST from "..";
+import "./style.css";
 
 function PrintModal({ isShow, onHide, orderDetail, mealDetail }) {
   const handleClose = () => {
@@ -57,14 +58,17 @@ function PrintModal({ isShow, onHide, orderDetail, mealDetail }) {
               display: inline-block;
               width: 150px;
             }
-            .ingredients-list {
-              list-style-type: none;
-              padding: 0;
-              margin: 0;
+            .ingredients-list2 {
+              display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 450px;
             }
             .ingredients-list li {
               padding: 5px 0;
               border-bottom: 1px dashed #eee;
+              
+ 
             }
             .signature-section {
               margin-top: 50px;
@@ -121,7 +125,7 @@ function PrintModal({ isShow, onHide, orderDetail, mealDetail }) {
                 <p><strong>Số điện thoại:</strong> {orderDetail?.phoneNumber}</p>
                 <p><strong>Địa chỉ:</strong> {orderDetail.addressDelivery}</p>
               </div>
-              
+
               <div className="print-section">
                 <h3>Thông Tin Giao Hàng</h3>
                 <p><strong>Ngày giao:</strong> {moment(mealDetail.estimatedDate).format("DD/MM/YYYY")}</p>
@@ -130,7 +134,7 @@ function PrintModal({ isShow, onHide, orderDetail, mealDetail }) {
 
               <div className="print-section">
                 <h3>Thành phần món ăn:</h3>
-                <ul className="ingredients-list">
+                <ul className="ingredients-list2">
                   {mealDetail.favoriteIngredients.map((ingredient) => (
                     <li key={ingredient._id}>{ingredient.name}</li>
                   ))}

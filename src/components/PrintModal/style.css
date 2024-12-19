@@ -1,0 +1,11 @@
+.ingredients-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.ingredients-list2 li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #eee;
+}

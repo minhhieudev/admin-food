@@ -32,7 +32,7 @@ function MealList() {
 
   const thead = [
     { name: "STT", style: { width: 20 }, className: "" },
-    { style: { textAlign: "left" }, name: "Tên khách hàng" },
+    { style: { textAlign: "center" }, name: "Tên khách hàng" },
     { name: "Khung giờ", style: { width: 120 } },
     { name: "Ngày giao", style: { width: 120 } },
     { name: "Trạng thái", style: { width: 120 } },
@@ -93,7 +93,7 @@ function MealList() {
   
         return [
           { value: (pagination.page - 1) * pagination.pageSize + (index + 1) },
-          { value: x.customerID.email },
+          { value: `${x.customerID.info.firstName} ${x.customerID.info.lastName}` },
           { value: x?.estimatedTime },
           { value: moment(x.estimatedDate).format("DD/MM/YYYY") },
           {
