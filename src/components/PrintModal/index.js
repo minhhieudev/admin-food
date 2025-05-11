@@ -107,7 +107,7 @@ function PrintModal({ isShow, onHide, orderDetail, mealDetail }) {
           <h3>Phiếu Giao Hàng</h3>
           <button className="close-button" onClick={handleClose}>&times;</button>
         </div>
-        <div className="modal-body">
+        <div className="modal-body" style={{ maxHeight: '70vh', overflowY: 'auto' }}>
           {(!orderDetail || !mealDetail) ? (
             <div>Loading...</div>
           ) : (

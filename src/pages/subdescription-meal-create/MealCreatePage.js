@@ -22,6 +22,13 @@ function MealCreatePage() {
   const [totalDate, setTotalDate] = useState(0);
   const [mealsPerDay, setMealsPerDay] = useState(0);
   const [totalSub, setTotalSub] = useState(0);
+  
+  // Thêm state cho thông tin dinh dưỡng
+  const [calories, setCalories] = useState("");
+  const [protein, setProtein] = useState("");
+  const [carbs, setCarbs] = useState("");
+  const [fats, setFats] = useState("");
+  
   const [errorMessage, setErrorMessage] = useState({});
 
   useEffect(() => {
@@ -30,6 +37,12 @@ function MealCreatePage() {
       setMealsPerDay(mealDetail?.mealsPerDay);
       setTotalSub(mealDetail?.totalSub);
       setName(mealDetail?.name);
+      
+      // Cập nhật giá trị dinh dưỡng nếu có
+      setCalories(mealDetail?.nutritionInfo?.calories || "");
+      setProtein(mealDetail?.nutritionInfo?.protein || "");
+      setCarbs(mealDetail?.nutritionInfo?.carbs || "");
+      setFats(mealDetail?.nutritionInfo?.fats || "");
     }
   }, [mealDetail]);
 
@@ -81,6 +94,13 @@ function MealCreatePage() {
           totalDate,
           mealsPerDay,
           totalSub,
+          // Thêm thông tin dinh dưỡng
+          nutritionInfo: {
+            calories,
+            protein,
+            carbs,
+            fats
+          }
         },
       })
     );
@@ -99,13 +119,19 @@ function MealCreatePage() {
           totalDate,
           mealsPerDay,
           totalSub,
+          // Thêm thông tin dinh dưỡng
+          nutritionInfo: {
+            calories,
+            protein,
+            carbs,
+            fats
+          }
         },
       })
     );
   };
 
   const pakageData = [
-
     {
       name: 'Siêu vip',
       value: 'vip'
@@ -114,8 +140,7 @@ function MealCreatePage() {
       name: 'Bình thường',
       value: 'vip2'
     },
-
-  ]
+  ];
 
   return (
     <MST.Container
@@ -192,6 +217,53 @@ function MealCreatePage() {
                 placeholder="Nhập tổng số"
                 errorMessage={errorMessage.totalSub}
               />
+            </div>
+          </div>
+
+          {/* Thêm phần Thông tin dinh dưỡng */}
+          <div className="service-create-content">
+            <div className="service-create-title">Thông tin dinh dưỡng</div>
+
+            <div className="custom" style={{ display: "flex", flexWrap: "wrap" }}>
+              <div className="modal-body" style={{ flex: "1 1 45%", margin: "0 10px 15px 0" }}>
+                <div className="service-create-one-field-name">Calories (Kcal)</div>
+                <MST.Input
+                  type="number"
+                  value={calories}
+                  onChange={(e) => setCalories(e.target.value)}
+                  placeholder="Nhập số calories"
+                />
+              </div>
+
+              <div className="modal-body" style={{ flex: "1 1 45%", margin: "0 0 15px 10px" }}>
+                <div className="service-create-one-field-name">Protein (g)</div>
+                <MST.Input
+                  type="number"
+                  value={protein}
+                  onChange={(e) => setProtein(e.target.value)}
+                  placeholder="Nhập lượng protein"
+                />
+              </div>
+
+              <div className="modal-body" style={{ flex: "1 1 45%", margin: "0 10px 0 0" }}>
+                <div className="service-create-one-field-name">Carbs (g)</div>
+                <MST.Input
+                  type="number"
+                  value={carbs}
+                  onChange={(e) => setCarbs(e.target.value)}
+                  placeholder="Nhập lượng carbohydrate"
+                />
+              </div>
+
+              <div className="modal-body" style={{ flex: "1 1 45%", margin: "0 0 0 10px" }}>
+                <div className="service-create-one-field-name">Fats (g)</div>
+                <MST.Input
+                  type="number"
+                  value={fats}
+                  onChange={(e) => setFats(e.target.value)}
+                  placeholder="Nhập lượng chất béo"
+                />
+              </div>
             </div>
           </div>
 

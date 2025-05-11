@@ -39,7 +39,7 @@ function ServiceList() {
       style: {
         textAlign: "left",
       },
-      name: "Tên dịch vụ",
+      name: "Tên gói ăn",
     },
     {
       name: "Giá dịch vụ",

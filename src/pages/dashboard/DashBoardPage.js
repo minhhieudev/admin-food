@@ -6,9 +6,17 @@ import DashBoardRight from "./DashBoard.Right";
 function DashBoardPage() {
   return (
     <MST.Container title="Bảng thống kê">
-      <div className="dashboard-content">
-        <DashBoardLeft />
-        <DashBoardRight />
+      <div className="dashboard-content" style={{ 
+        display: "flex", 
+        width: "100%",
+        gap: "20px"
+      }}>
+        <div style={{ width: "40%" }}>
+          <DashBoardLeft />
+        </div>
+        <div style={{ width: "60%" }}>
+          <DashBoardRight />
+        </div>
       </div>
     </MST.Container>
   );

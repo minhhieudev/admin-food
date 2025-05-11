@@ -24,14 +24,16 @@
   display: flex;
 }
 .service-create-content-left {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  flex: 5;
 }
+
 .service-create-content-right {
+  width: 40%;
   margin-left: 16px;
-  flex: 2;
 }
+
 .content{
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@
   margin-top: 8px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .mt-3{
   margin-top: 8px;

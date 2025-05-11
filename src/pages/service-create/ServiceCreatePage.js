@@ -234,7 +234,7 @@ function ServiceCreatePage() {
 
     if (isEmpty(name)) {
       errorCount++;
-      tempEM.name = "Tên dịch vụ không được để trống";
+      tempEM.name = "Tên gói ăn không được để trống";
     }
 
     if (price.length === 0) {
@@ -523,7 +523,7 @@ function ServiceCreatePage() {
 
             <div className="service-create-one-field">
               <div className="service-create-one-field-name">
-                Tên dịch vụ<span className="color-red"> *</span>
+                Tên gói ăn<span className="color-red"> *</span>
               </div>
               <div>
                 <MST.Input
@@ -567,7 +567,7 @@ function ServiceCreatePage() {
             </div>
           </div>
 
-          <div className="service-create-content">
+          {/* <div className="service-create-content">
             <div className="service-create-title">Giá dịch vụ</div>
 
             <div
@@ -624,9 +624,9 @@ function ServiceCreatePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="service-create-content">
+          {/* <div className="service-create-content">
             <div className="d-flex jc-between ai-center">
               <div className="service-create-title">
                 Dữ liệu nhập vào của khách hàng
@@ -638,7 +638,7 @@ function ServiceCreatePage() {
               </div>
             </div>
             <div className="pt-20">{renderTable}</div>
-          </div>
+          </div> */}
 
           <div className="service-create-content">
             <div className="service-create-title">Mô tả dịch vụ</div>
@@ -662,7 +662,7 @@ function ServiceCreatePage() {
               </div>
             </div>
 
-            <div className="service-create-one-field">
+            {/* <div className="service-create-one-field">
               <div className="service-create-one-field-name">
                 Mô tả sau khi đặt hàng
               </div>
@@ -681,7 +681,7 @@ function ServiceCreatePage() {
                   data={orderSuccessDescription || ""}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="service-create-content">
             <div className="service-create-title">Upload hình ảnh</div>
@@ -745,7 +745,7 @@ function ServiceCreatePage() {
               <MST.Switch enable={status} onClick={onChangeStatus} />
             </div>
 
-            <div className="service-create-one-field">
+            {/* <div className="service-create-one-field">
               <div className="service-create-one-field-name">
                 Đặt thành dịch vụ hot
               </div>
@@ -753,7 +753,7 @@ function ServiceCreatePage() {
                 enable={isBestSellers}
                 onClick={onChangeIsBestSellers}
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="service-create-content">
@@ -814,7 +814,7 @@ function ServiceCreatePage() {
               )}
             </div> */}
 
-            <div className="service-create-one-field">
+            {/* <div className="service-create-one-field">
               <div className="service-create-one-field-name">
                 Nhóm dịch vụ
               </div>
@@ -841,7 +841,7 @@ function ServiceCreatePage() {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="service-create-one-field">
               <div className="service-create-one-field-name">Thẻ dịch vụ</div>
@@ -852,6 +852,7 @@ function ServiceCreatePage() {
                   selectedList={serviceTags}
                   width={"100%"}
                   data={serviceTagsList}
+                  
                 />
                 <div style={{ marginTop: 8 }}>
                   <ServiceCreateCreateServiceTagModal

@@ -39,6 +39,7 @@
 
 
 .listTag {
+  width: 820px;
   display: flex;
   flex-wrap: wrap;
   max-height: 150px; /* Chiều cao tối đa của danh sách */

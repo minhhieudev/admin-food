@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
-import DashBoardLeftTotal from "../../components/dashboard/DashBoardLeft.Total";
-import SVGInbox from "../../components/dashboard/icon/Inbox";
-import SVGMoney from "../../components/dashboard/icon/money";
-import SVGMoneyGreen from "../../components/dashboard/icon/moneyGreen";
 import { useDispatch, useSelector } from "react-redux";
 import {
   DashBoardActions,
   DashBoardSelectors,
 } from "../../app/services/dashboard/dashboard.slice";
+import DashBoardLeftTotal from "../../components/dashboard/DashBoardLeft.Total";
 import DashBoardLeftTotalCustomer from "../../components/dashboard/DashBoardLeft.Total.Customer";
-import SVGSetting from "../../components/dashboard/icon/setting";
 import SVGCustomer from "../../components/dashboard/icon/customer";
-import DashBoardLeftTotalBalance from "./DashBoard.Left.TotalBalance";
-import DashBoarLeftChartPie from "./DashBoard.Left.Chart.Pie";
-import DashBoarLeftChartLine from "./DashBoard.Left.Chart.Line";
+import SVGInbox from "../../components/dashboard/icon/Inbox";
+import SVGMoney from "../../components/dashboard/icon/money";
+import SVGMoneyGreen from "../../components/dashboard/icon/moneyGreen";
+import SVGSetting from "../../components/dashboard/icon/setting";
+import "./style.css";
+
 export default function DashBoardLeft() {
   const dispatch = useDispatch();
   const system = useSelector(DashBoardSelectors.system);
@@ -24,6 +22,7 @@ export default function DashBoardLeft() {
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingMoney, setIsLoadingMoney] = useState(false);
   const [isLoadingRevenue, setIsLoadingRevenue] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       dispatch(DashBoardActions.getSystemList());
@@ -71,6 +70,7 @@ export default function DashBoardLeft() {
       );
     }
   }, []);
+
   const handleCheckTimeOrder = (dataType, index) => {
     if (!isLoading) {
       setIsLoading(true);
@@ -87,6 +87,7 @@ export default function DashBoardLeft() {
       );
     }
   };
+
   const handleCheckTimeMoney = (dataType, index) => {
     if (!isLoadingMoney) {
       setIsLoadingMoney(true);
@@ -103,6 +104,7 @@ export default function DashBoardLeft() {
       );
     }
   };
+
   const handleCheckTimeRevenue = (dataType, index) => {
     if (!isLoadingRevenue) {
       setIsLoadingRevenue(true);
@@ -119,10 +121,25 @@ export default function DashBoardLeft() {
       );
     }
   };
+
   return (
     <div className="dashboard-left-inner">
-      <div className="dashboard-left-content">
-        <div className="dashboard-left-total-left">
+      <div className="dashboard-left-content" style={{ display: "flex", flexDirection: "column", gap: "20px", width: "100%" }}>
+        <div className="dashboard-box">
+          <DashBoardLeftTotalCustomer
+            item={system?.totalCustomer || ""}
+            title={"Tổng khách hàng"}
+            icon={<SVGCustomer />}
+          />
+        </div>
+        <div className="dashboard-box">
+          <DashBoardLeftTotalCustomer
+            item={system?.totalSerivce || "5"}
+            title={"Tổng dịch vụ"}
+            icon={<SVGSetting />}
+          />
+        </div>
+        <div className="dashboard-box">
           <DashBoardLeftTotal
             item={order || ""}
             icon={<SVGInbox />}
@@ -131,6 +148,8 @@ export default function DashBoardLeft() {
             isLoading={isLoading}
             handleCheckTime={handleCheckTimeOrder}
           />
+        </div>
+        <div className="dashboard-box">
           <DashBoardLeftTotal
             item={money || ""}
             icon={<SVGMoney />}
@@ -138,6 +157,8 @@ export default function DashBoardLeft() {
             handleCheckTime={handleCheckTimeMoney}
             isLoading={isLoadingMoney}
           />
+        </div>
+        {/* <div className="dashboard-box">
           <DashBoardLeftTotal
             item={revenue || ""}
             icon={<SVGMoneyGreen />}
@@ -145,25 +166,9 @@ export default function DashBoardLeft() {
             handleCheckTime={handleCheckTimeRevenue}
             isLoading={isLoadingRevenue}
           />
-        </div>
-        <div className="dashboard-left-total-right">
-          <div className="total-right-top">
-            <DashBoardLeftTotalCustomer
-              item={system?.totalCustomer || ""}
-              title={"Tổng khách hàng"}
-              icon={<SVGCustomer />}
-            />
-            <DashBoardLeftTotalCustomer
-              item={system?.totalSerivce || "5"}
-              title={"Tổng dịch vụ"}
-              icon={<SVGSetting />}
-            />
-          </div>
-         <DashBoarLeftChartPie />
-        </div>
+        </div> */}
+
       </div>
-      <DashBoardLeftTotalBalance item={system} />
-      <DashBoarLeftChartLine />
     </div>
   );
 }

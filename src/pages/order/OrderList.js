@@ -97,7 +97,7 @@ function OrderList() {
             textAlign: "left",
           },
         },
-        { value: x?.customer?.email },
+        { value: [x?.customer?.info?.firstName, x?.customer?.info?.lastName].filter(Boolean).join(' ') },
         // {
         //   value: odGenStatus(x.status),
         //   style: {

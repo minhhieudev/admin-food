@@ -94,15 +94,15 @@ export default function DashBoarLeftChartPie() {
         >
           <div className="loaderSmall"></div>
         </div>
-      ) : (
+      ) : dataPie?.chart && dataPie.chart.length > 0 ? (
         <div className="chart-content">
           <div className="chart">
             <VictoryPie
               radius={126}
-              colorScale={dataPie?.colors || ["#ccc", "#ddd"]} // Màu mặc định
-              data={dataPie?.chart || []} // Tránh lỗi khi dataPie.chart là null
+              colorScale={dataPie?.colors || ["#ccc", "#ddd"]}
+              data={dataPie?.chart || []}
               labelComponent={<VictoryTooltip />}
-              labels={({ datum }) => `${datum.y || 0}%`} // Gán giá trị 0% nếu thiếu
+              labels={({ datum }) => `${datum.y || 0}%`}
               labelRadius={({ innerRadius }) => innerRadius + 50}
               style={{
                 data: {
@@ -146,12 +146,26 @@ export default function DashBoarLeftChartPie() {
               gutter={10}
               itemsPerRow={5}
               data={(dataPie?.chart || []).map((item, index) => ({
-                name: capitalizeFirstLetter(item.x || "N/A"), // Đặt mặc định nếu item.x không có
-                symbol: { fill: dataPie?.colors?.[index] || "#ccc" }, // Mặc định là #ccc
+                name: capitalizeFirstLetter(item.x || "N/A"),
+                symbol: { fill: dataPie?.colors?.[index] || "#ccc" },
               }))}
             />
-
           </div>
+        </div>
+      ) : (
+        <div 
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            height: "200px",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#888",
+          }}
+        >
+          <div style={{ fontSize: "18px", marginBottom: "10px" }}>Không có dữ liệu</div>
+          <div style={{ fontSize: "14px" }}>Vui lòng thử lại sau</div>
         </div>
       )}
     </div>

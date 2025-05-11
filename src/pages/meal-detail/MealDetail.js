@@ -254,9 +254,9 @@ function MealDetail() {
                                 />
                                 <div className="ingredient-info">
                                     <h4>{ingredient.name}</h4>
-                                    <div
+                                    {/* <div
                                         dangerouslySetInnerHTML={{ __html: ingredient.description }}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         ))}
